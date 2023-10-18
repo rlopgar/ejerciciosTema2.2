@@ -26,7 +26,7 @@ public class ContandoNumeros {
             }
         }
 
-        System.out.println("Resultado:\nNumeros positivos: "+numeroPositivos+"\nNumeros negativos: "+numeroNegativos+"\nNumeros 0: "+numeroCero);
+        System.out.println("\nNumeros positivos: "+numeroPositivos+"\nNumeros negativos: "+numeroNegativos+"\nNumeros 0: "+numeroCero);
 
 
     }
