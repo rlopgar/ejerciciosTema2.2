@@ -12,7 +12,6 @@ public class ContandoNumeros {
         System.out.println("Introduce 10 numeros:");
 
         for (int i=1;i<=10;i++){
-            System.out.println("Numero "+i);
             int numero= scan.nextInt();
 
             if(numero>0){

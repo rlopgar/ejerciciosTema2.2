@@ -6,7 +6,6 @@ public class Autobuses {
         Scanner scan=new Scanner(System.in);
 
         int totalPersonas=0;
-        int totalBuses=0;
 
         while (true){
             System.out.println("Personas del grupo (0=FIN): ");
@@ -23,9 +22,8 @@ public class Autobuses {
                 break;
             }
         }
-        if (totalPersonas%55==0){
-            totalBuses++;
-        }
+
+        System.out.println("Son necesarios "+totalPersonas/55+" autobuses");
 
     }
 
