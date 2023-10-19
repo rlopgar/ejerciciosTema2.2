@@ -7,11 +7,11 @@ public class Autobuses {
 
         int totalPersonas=0;
         int totalBus=0;
+        int personasGrupo=0;
 
-        while (true){
-            System.out.println("Personas del grupo (0=FIN): ");
-            System.out.println("Apuntados. Van "+totalPersonas);
-            int personasGrupo=scan.nextInt();
+        do {
+            System.out.print("Personas del grupo (0=FIN): ");
+            personasGrupo=scan.nextInt();
 
             if(personasGrupo>0){
                 totalPersonas+=personasGrupo;
@@ -19,10 +19,10 @@ public class Autobuses {
             else if(personasGrupo<0){
                 System.out.println("No puede ser negativo");
             }
-            else{
-                break;
-            }
-        }
+
+            System.out.println("Apuntados. Van "+totalPersonas);
+        }while(personasGrupo!=0);
+
         if(totalPersonas%55==0){
             totalBus=totalPersonas/55;
         }

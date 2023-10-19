@@ -9,9 +9,7 @@ public class ContandoNumeros {
 
         Scanner scan=new Scanner(System.in);
 
-        System.out.println("Introduce 10 numeros:");
-
-        for (int i=1;i<=10;i++){
+        for (int i=0;i<10;i++){
             int numero= scan.nextInt();
 
             if(numero>0){
@@ -25,8 +23,7 @@ public class ContandoNumeros {
             }
         }
 
-        System.out.println("\nNumeros positivos: "+numeroPositivos+"\nNumeros negativos: "+numeroNegativos+"\nNumeros 0: "+numeroCero);
-
+        System.out.println(+numeroNegativos+" números negativos\n"+numeroCero+" ceros\n"+numeroPositivos+" números positivos");
 
     }
 }
