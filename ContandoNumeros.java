@@ -10,6 +10,8 @@ public class ContandoNumeros {
         Scanner scan=new Scanner(System.in);
 
         for (int i=0;i<10;i++){
+
+            System.out.print(">");
             int numero= scan.nextInt();
 
             if(numero>0){

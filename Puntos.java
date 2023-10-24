@@ -1,21 +1,52 @@
 import java.util.Scanner;
 
 public class Puntos {
+
     public static void main(String[] args) {
 
-        Scanner scan=new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
 
         System.out.print(">");
-        String cadena=scan.nextLine();
+        String cadena = s.nextLine();
 
         System.out.print(">");
-        int longitud=scan.nextInt();
+        int longitud = s.nextInt();
 
         System.out.print(">");
-        char direccion=scan.next().charAt(0);
+        char direccion = s.next().charAt(0);
 
-        if (cadena.length()>longitud){
+        if (cadena.length() > longitud) {
+            System.out.print("La cadena no cabe");
+        } else{
 
+            switch (direccion){
+                case 'D':
+                    completarDerecha(cadena, longitud);
+                    break;
+                case 'I':
+                    completarIzquierda(cadena, longitud);
+                    break;
+                default:
+                    System.out.print("La dirección debe ser I o D");
+            }
         }
+    }
+
+    public static void completarDerecha(String cadena, int longitud) {
+
+        while(cadena.length() < longitud){
+            cadena = "." + cadena;
+        }
+
+        System.out.print(cadena);
+    }
+
+    public static void completarIzquierda(String cadena, int longitud) {
+
+        while(cadena.length() < longitud){
+            cadena = cadena + ".";
+        }
+
+        System.out.print(cadena);
     }
 }

@@ -11,7 +11,10 @@ public class CreceDecre {
 
         Scanner scan=new Scanner(System.in);
         do{
+
+            System.out.print(">");
             actual= scan.nextInt();
+
         if(contador>1&&actual>=0) {
             if (actual > anterior) {
                 decrece = false;

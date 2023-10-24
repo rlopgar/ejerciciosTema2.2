@@ -10,7 +10,7 @@ public class Autobuses {
         int personasGrupo=0;
 
         do {
-            System.out.print("Personas del grupo (0=FIN): ");
+            System.out.print("Personas del grupo (0=FIN): >");
             personasGrupo=scan.nextInt();
 
             if(personasGrupo>0){
